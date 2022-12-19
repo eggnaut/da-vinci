@@ -1,5 +1,5 @@
 # EggEngine
-A custom framework/engine written by me with and for Python.
+A custom framework/engine written with and for Python.
 
 ## Features:
 EggEngine comes with 7 Python modules ready to use!
@@ -11,7 +11,7 @@ EggEngine comes with 7 Python modules ready to use!
 6. `module`
 7. `turtl`
 
-## How to use:
+## Quick start:
 
 Obviously, the first step would be to download the source code from this repository. Then, follow these steps:2. 
 
