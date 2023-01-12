@@ -14,7 +14,7 @@ import platform as pm
 
 def dependencies(pip: str | None) -> None:
     '''
-    Installs the required modules/dependencies that this engine/framework require.
+    Installs the required modules/dependencies that this engine/framework requires.
 
     Args:
         pip (str | None, optional): for macOS: pip3, for Windows: pip, this is a terminal/shell command
@@ -31,11 +31,9 @@ def dependencies(pip: str | None) -> None:
         if pm.system() == 'Windows':
             sp.call('pip install pygame', shell = True)
             sp.call('pip install cryptography', shell = True)
-            sp.call('pip install colorama', shell = True)
         elif pm.system() == 'Darwin' or pm.system() == 'Linux':
             sp.call('pip3 install pygame', shell = True)
             sp.call('pip3 install cryptography', shell = True)
-            sp.call('pip3 install colorama', shell = True)
 
 def updateAll(pip: str) -> None:
     '''
