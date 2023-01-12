@@ -51,9 +51,9 @@ def updateAll(pip: str | None) -> None:
             sys.exit()
     else:
         if pm.system() == 'Windows':
-            sp.call(f'pip list --outdated > outdated.txt', shell = True)
+            sp.call('pip list --outdated > outdated.txt', shell = True)
         elif pm.system() == 'Darwin' or pm.system() == 'Linux':
-            sp.call(f'pip3 list --outdated > outdated.txt', shell = True)
+            sp.call('pip3 list --outdated > outdated.txt', shell = True)
 
     with open('outdated.txt', 'r') as file:
         file.readline()
@@ -64,7 +64,13 @@ def updateAll(pip: str | None) -> None:
 
             if package.split():
                 name = package.split()[0]
-                sp.call(f'{pip} install --upgrade {name}' , shell = True)
+                if pip:
+                    sp.call(f'{pip} install --upgrade {name}' , shell = True)
+                else:
+                    if pm.system() == 'Windows':
+                        sp.call('pip install --upgrade {name}' , shell = True)
+                    elif pm.system() == 'Darwin' or pm.system() == 'Linux':
+                        sp.call('pip3 install --upgrade {name}' , shell = True)
             elif not package:
                 break
 
