@@ -5,7 +5,7 @@ Usage: 'from egg import files' or 'import egg.files'
 
 Includes functions for reading content from and writing content to files.
 
-Made by eggnaut
+Made by @eggnaut
 '''
 
 import sys

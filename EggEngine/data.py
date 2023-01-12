@@ -5,7 +5,7 @@ Usage: 'from egg import data' or 'import egg.data'
 
 Includes many useful functions related to data and data storage within Python, mainly lists and 2D lists (arrays).
 
-Made by eggnaut
+Made by @eggnaut
 '''
 
 import random as rd

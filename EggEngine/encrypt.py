@@ -5,7 +5,7 @@ Usage: 'from egg import encrypt' or 'import egg.encrypt'
 
 Includes many useful functions for encryption and decryption of files. Utilizes Fernet from cryptography module.
 
-Made by eggnaut
+Made by @eggnaut
 '''
 
 import sys

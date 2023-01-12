@@ -5,7 +5,7 @@ Usage: 'from egg import turtl' or 'import egg.turtl'
 
 Includes functions for drawing custom shapes/polygons with customizability and ease. Utilizes Turtle from turtle module.
 
-Made by eggnaut.
+Made by @eggnaut.
 '''
 
 import turtle as tl

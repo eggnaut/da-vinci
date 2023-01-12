@@ -5,7 +5,7 @@ Usage: 'from egg import debug' or 'import egg.debug'
 
 Includes functions for debugging in Python using print debugging or Pygame displays.
 
-Made by eggnaut
+Made by @eggnaut
 '''
 
 import sys

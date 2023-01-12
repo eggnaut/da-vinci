@@ -5,7 +5,7 @@ Usage: 'from egg import module' or 'import egg.module'
 
 Includes functions to install dependencies for Engine as well as update every Python package/module installed.
 
-Made by eggnaut
+Made by @eggnaut
 '''
 
 import sys

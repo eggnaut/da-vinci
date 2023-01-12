@@ -5,7 +5,7 @@ Usage: 'from egg import image' or 'import egg.image'
 
 Includes functions for brightening, darkening, and scaling images without creating a new image.
 
-Made by eggnaut
+Made by @eggnaut
 '''
 
 import pygame as pg
