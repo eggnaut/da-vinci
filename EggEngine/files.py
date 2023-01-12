@@ -1,7 +1,7 @@
 '''
 Part of EggEngine.
 
-Usage: 'from egg import files' or 'import egg.files'
+Usage: 'from EggEngine import files' or 'import EggEngine.files'
 
 Includes functions for reading content from and writing content to files.
 

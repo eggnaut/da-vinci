@@ -1,7 +1,7 @@
 '''
 Part of EggEngine.
 
-Usage: 'from egg import image' or 'import egg.image'
+Usage: 'from EggEngine import image' or 'import EggEngine.image'
 
 Includes functions for brightening, darkening, and scaling images without creating a new image.
 

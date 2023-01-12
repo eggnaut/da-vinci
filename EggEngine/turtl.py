@@ -1,7 +1,7 @@
 '''
 Part of EggEngine.
 
-Usage: 'from egg import turtl' or 'import egg.turtl'
+Usage: 'from EggEngine import turtl' or 'import EggEngine.turtl'
 
 Includes functions for drawing custom shapes/polygons with customizability and ease. Utilizes Turtle from turtle module.
 

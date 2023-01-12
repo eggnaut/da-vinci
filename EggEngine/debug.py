@@ -1,7 +1,7 @@
 '''
 Part of EggEngine.
 
-Usage: 'from egg import debug' or 'import egg.debug'
+Usage: 'from EggEngine import debug' or 'import EggEngine.debug'
 
 Includes functions for debugging in Python using print debugging or Pygame displays.
 

@@ -1,7 +1,7 @@
 '''
 Part of EggEngine.
 
-Usage: 'from egg import encrypt' or 'import egg.encrypt'
+Usage: 'from EggEngine import encrypt' or 'import EggEngine.encrypt'
 
 Includes many useful functions for encryption and decryption of files. Utilizes Fernet from cryptography module.
 

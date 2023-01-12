@@ -1,7 +1,7 @@
 '''
 Part of EggEngine.
 
-Usage: 'from egg import module' or 'import egg.module'
+Usage: 'from EggEngine import module' or 'import EggEngine.module'
 
 Includes functions to install dependencies for Engine as well as update every Python package/module installed.
 

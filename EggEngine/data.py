@@ -1,7 +1,7 @@
 '''
 Part of EggEngine.
 
-Usage: 'from egg import data' or 'import egg.data'
+Usage: 'from EggEngine import data' or 'import EggEngine.data'
 
 Includes many useful functions related to data and data storage within Python, mainly lists and 2D lists (arrays).
 
