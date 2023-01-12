@@ -27,7 +27,7 @@ def readFile(file: str) -> str | int | bytes:
         return content
 
     except FileNotFoundError:
-        print(f'\nengine.files.readFile() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
+        print(f'\nEggEngine.files.readFile() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
         sys.exit()
 
 def writeFile(file: str, content: str | int | bytes) -> None:

@@ -25,7 +25,7 @@ def dependencies(pip: str | None) -> None:
             sp.call(f'{pip} install pygame', shell = True)
             sp.call(f'{pip} install cryptography', shell = True)
         except:
-            print(f'\nengine.module.dependencies() was unable to install dependencies.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
+            print(f'\nEggEngine.module.dependencies() was unable to install dependencies.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
             sys.exit()
     else:
         if pm.system() == 'Windows':
@@ -47,7 +47,7 @@ def updateAll(pip: str | None) -> None:
         try:
             sp.call(f'{pip} list --outdated > outdated.txt', shell = True)
         except:
-            print(f'\nengine.module.updateAll() was unable to update modules.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
+            print(f'\nEggEngine.module.updateAll() was unable to update modules.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
             sys.exit()
     else:
         if pm.system() == 'Windows':

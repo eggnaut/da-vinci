@@ -58,7 +58,7 @@ def loadKey(file: str) -> bytes:
         return key
 
     except FileNotFoundError:
-        print(f'\nengine.encrypt.loadKey() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
+        print(f'\nEggEngine.encrypt.loadKey() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
         sys.exit()
 
 def encryptFile(key: bytes, file: str) -> None:
@@ -80,7 +80,7 @@ def encryptFile(key: bytes, file: str) -> None:
         encrypted = fernetObj.encrypt(text)
 
     except FileNotFoundError:
-        print(f'\nengine.encrypt.encryptFile() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
+        print(f'\nEggEngine.encrypt.encryptFile() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
         sys.exit()
 
     with open (file, 'wb') as newFile:
@@ -107,7 +107,7 @@ def decryptFile(key: bytes, file: str) -> None:
         decrypted = fernetObj.decrypt(text)
 
     except FileNotFoundError:
-        print(f'\nengine.encrypt.decryptFile() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
+        print(f'\nEggEngine.encrypt.decryptFile() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
         sys.exit()
 
     with open(file, 'wb') as newFile:
