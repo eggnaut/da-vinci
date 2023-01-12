@@ -35,19 +35,25 @@ def dependencies(pip: str | None) -> None:
             sp.call('pip3 install pygame', shell = True)
             sp.call('pip3 install cryptography', shell = True)
 
-def updateAll(pip: str) -> None:
+def updateAll(pip: str | None) -> None:
     '''
     Updates all installed modules without the hassle of this once tedious task.
 
     Args:
-        pip (str): for macOS: pip3, for Windows: pip, this is a terminal/shell command
+        pip (str | None, optional): for macOS: pip3, for Windows: pip, this is a terminal/shell command
     '''
     
-    try:
-           sp.call(f'{pip} list --outdated > outdated.txt', shell = True)
-    except:
-        print(f'\nengine.module.updateAll() was unable to update modules.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
-        sys.exit()
+    if pip:
+        try:
+            sp.call(f'{pip} list --outdated > outdated.txt', shell = True)
+        except:
+            print(f'\nengine.module.updateAll() was unable to update modules.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
+            sys.exit()
+    else:
+        if pm.system() == 'Windows':
+            sp.call(f'pip list --outdated > outdated.txt', shell = True)
+        elif pm.system() == 'Darwin' or pm.system() == 'Linux':
+            sp.call(f'pip3 list --outdated > outdated.txt', shell = True)
 
     with open('outdated.txt', 'r') as file:
         file.readline()
