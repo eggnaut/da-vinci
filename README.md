@@ -13,7 +13,7 @@ EggEngine comes with 7 Python modules ready to use!
 
 ## Quick start:
 
-Obviously, the first step would be to download the source code from this repository. Then, follow these steps:2. 
+Obviously, the first step would be to download the source code from this repository. Then, follow these steps:
 
 1. Copy the folder `engine` into your project folder.
 2. In your Python file, add the following line: 
