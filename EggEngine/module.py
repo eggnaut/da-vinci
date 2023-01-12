@@ -71,6 +71,7 @@ def updateAll(pip: str | None) -> None:
                         sp.call('pip install --upgrade {name}' , shell = True)
                     elif pm.system() == 'Darwin' or pm.system() == 'Linux':
                         sp.call('pip3 install --upgrade {name}' , shell = True)
+                        
             elif not package:
                 break
 
