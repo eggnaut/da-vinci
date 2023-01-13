@@ -1,15 +1,15 @@
 # EggEngine
 A custom framework/library written with and for Python.
 
-## Socials
+## Socials:
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/eggnaut/EggEngine?logo=Github&style=for-the-badge) ![GitHub watchers](https://img.shields.io/github/watchers/eggnaut/EggEngine?logo=Github&style=for-the-badge) ![GitHub followers](https://img.shields.io/github/followers/eggnaut?logo=Github&style=for-the-badge)
 
-## Downloads
+## Downloads:
 
 ![GitHub all releases](https://img.shields.io/github/downloads/eggnaut/EggEngine/total?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/eggnaut/EggEngine?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/eggnaut/EggEngine?style=for-the-badge)
 
-## Developers
+## Developers:
 
 ![GitHub issues](https://img.shields.io/github/issues/eggnaut/EggEngine?style=for-the-badge) ![GitHub closed issues](https://img.shields.io/github/issues-closed/eggnaut/EggEngine?style=for-the-badge)
 
@@ -28,6 +28,29 @@ EggEngine comes with 7 Python modules ready to use!
 5. `image`
 6. `module`
 7. `turtl`
+
+## Setup:
+This will install Python modules (or dependencies) that are required to allow all features of EggEngine to work as intended.
+
+1. Create a new Python file, you can name it anything you want.
+2. Copy the folder `EggEngine` into the same diredctory.
+3. In the Python file, add the following line:
+```python
+from EggEngine import module
+```
+- Or (not recommended) alternative:
+```python
+import EggEngine.module
+```
+4. Next, add these line:
+```python
+module.dependencies()
+```
+- If you used the alternative, add this line:
+```python
+EggEngine.module.dependencies()
+```
+5. You're ready to use EggEngine on your device!
 
 ## Quick start:
 
