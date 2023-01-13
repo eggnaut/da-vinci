@@ -1,13 +1,19 @@
 # EggEngine
 A custom framework/engine written with and for Python.
 
-![GitHub issues](https://img.shields.io/github/issues/eggnaut/EggEngine?style=for-the-badge) ![GitHub closed issues](https://img.shields.io/github/issues-closed/eggnaut/EggEngine?style=for-the-badge)
-
-![GitHub pull requests](https://img.shields.io/github/issues-pr/eggnaut/EggEngine?style=for-the-badge) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/eggnaut/EggEngine?style=for-the-badge)
+## Socials
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/eggnaut/EggEngine?logo=Github&style=for-the-badge) ![GitHub watchers](https://img.shields.io/github/watchers/eggnaut/EggEngine?logo=Github&style=for-the-badge) ![GitHub followers](https://img.shields.io/github/followers/eggnaut?logo=Github&style=for-the-badge)
 
+## Downloads
+
 ![GitHub all releases](https://img.shields.io/github/downloads/eggnaut/EggEngine/total?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/eggnaut/EggEngine?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/eggnaut/EggEngine?style=for-the-badge)
+
+## Developers
+
+![GitHub issues](https://img.shields.io/github/issues/eggnaut/EggEngine?style=for-the-badge) ![GitHub closed issues](https://img.shields.io/github/issues-closed/eggnaut/EggEngine?style=for-the-badge)
+
+![GitHub pull requests](https://img.shields.io/github/issues-pr/eggnaut/EggEngine?style=for-the-badge) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/eggnaut/EggEngine?style=for-the-badge)
 
 ![GitHub language count](https://img.shields.io/github/languages/count/eggnaut/EggEngine?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/eggnaut/EggEngine?style=for-the-badge)
 
