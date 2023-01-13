@@ -1,5 +1,5 @@
 # EggEngine
-A custom framework/engine written with and for Python.
+A custom framework/library written with and for Python.
 
 ## Socials
 
