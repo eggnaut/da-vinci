@@ -81,4 +81,4 @@ import EggEngine.data
 ```python
 EggEngine.data.function()
 ```
-3. Now you're ready to start using EggEngine!
+3. Now you're ready to start using EggEngine in your project!
