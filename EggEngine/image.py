@@ -45,7 +45,7 @@ def darken(image: pg.Surface, darkness: tuple | None = (0, 0, 0)) -> pg.Surface:
 
 def scaleImage(image: pg.Surface, scale: int | None = 2) -> pg.Surface:
     '''
-    Scales an image in a much way that makes the code more cleaner, without the long lines
+    Scales an image in a much way that makes the code more cleaner, without the long lines.
 
     Args:
         image (pg.Surface): the original image
