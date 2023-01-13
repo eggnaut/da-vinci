@@ -3,7 +3,7 @@ Part of EggEngine.
 
 Usage: 'from EggEngine import debug' or 'import EggEngine.debug'
 
-Includes functions for debugging in Python using print debugging or Pygame displays.
+Includes functions for debugging in Python as well as OS-related functions.
 
 Made by @eggnaut
 '''
