@@ -13,18 +13,24 @@ import pygame as pg
 pg.init()
 
 class button(pg.sprite.Sprite):
-    def __init__(self, imagePath: str | None, frames: list | None = None, quit: bool = False, pos: tuple = (0, 0)):
+    def __init__(self, imagePath: str | None, frames: list | None = None, hoverEffect: str | None = 'brighten', pos: tuple = (0, 0)):
         super().__init__()
         
         if imagePath and not frames:
             self.anim = False
             self.normal = pg.image.load(imagePath)
-            self.hover = self.image.fill((150, 150, 150), special_flags = pg.BLEND_RGB_ADD)
+            if hoverEffect == 'brighten':
+                self.hover = self.image.fill((150, 150, 150), special_flags = pg.BLEND_RGB_ADD)
+            elif hoverEffect == 'darken':
+                self.hover = self.image.fill((150, 150, 150), special_flags = pg.BLEND_RGB_SUB)
             self.image = self.normal
         elif not imagePath and frames:
             self.anim = True
             self.frames = [pg.image.load(path) for path in frames]
-            self.hovers =  [image.fill((150, 150, 150), special_flags = pg.BLEND_RGB_ADD) for image in self.frames]
+            if self.hoverEffect == 'brighten':
+                self.hovers =  [image.fill((150, 150, 150), special_flags = pg.BLEND_RGB_ADD) for image in self.frames]
+            elif hoverEffect == 'darken':
+                self.hovers =  [image.fill((150, 150, 150), special_flags = pg.BLEND_RGB_SUB) for image in self.frames]
             self.frameIndex = 0
             self.image = self.frames[self.frameIndex]
             
