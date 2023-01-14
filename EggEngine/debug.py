@@ -38,21 +38,6 @@ def debug(info, wn: pg.Surface, pos: tuple | None = (0, 0), font: pg.font.Font |
         sys.exit()
 
     wn.blit(debugInfo, pos)
-    
-def error(message: str, func: str, error: str, exit: bool | None = False) -> None:
-    '''
-    Makes print debugging a whole lot easier and useful in Python.
-
-    Args:
-        message (str): the custom message you would like to display
-        func (str): the function or class where this function is being used
-        error (str): the type of error you want to display
-        exit (bool | None, optional): whether you would like to end the program after the error. defaults to False.
-    '''
-    
-    print(f'\n {func} encountered an error. {error}: {message}')
-    if exit:
-        sys.exit()
 
 def checkOS(precise: bool = False) -> str:
     '''
@@ -69,7 +54,7 @@ def checkOS(precise: bool = False) -> str:
         if sys.platform() == 'aix':
             oper = 'AIX'
         elif sys.platform() == 'emscripten':
-            oper = 'emscripten'
+            oper = 'Emscripten'
         elif sys.platform() == 'linux':
             oper = 'Linux'
         elif sys.platform() == 'wasi':
