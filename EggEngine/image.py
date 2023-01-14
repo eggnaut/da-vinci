@@ -3,13 +3,26 @@ Part of EggEngine.
 
 Usage: 'from EggEngine import image' or 'import EggEngine.image'
 
-Includes functions for brightening, darkening, and scaling images without creating a new image.
+Includes functions for changing images' appearances and size.
 
 Made by @eggnaut
 '''
 
+import PIL
 import pygame as pg
 pg.init()
+
+def filter(path: str) -> None:
+    '''
+    Will convert an image to black and white; overrides the original image.
+
+    Args:
+        path (str): path to the image you want to change
+    '''
+    
+    image = PIL.Image.open(path)
+    image = image.convert('L')
+    image.save(path)
 
 def brighten(image: pg.Surface, brightness: tuple | None = (255, 255, 255)) -> pg.Surface:
     '''

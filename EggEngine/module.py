@@ -24,6 +24,7 @@ def dependencies(pip: str | None) -> None:
         try:
             sp.call(f'{pip} install pygame', shell = True)
             sp.call(f'{pip} install cryptography', shell = True)
+            sp.call(f'{pip} install pillow', shell = True)
         except:
             print(f'\nEggEngine.module.dependencies() was unable to install dependencies.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
             sys.exit()
@@ -31,9 +32,11 @@ def dependencies(pip: str | None) -> None:
         if pm.system() == 'Windows':
             sp.call('pip install pygame', shell = True)
             sp.call('pip install cryptography', shell = True)
+            sp.call('pip install pillow', shell = True)
         elif pm.system() == 'Darwin' or pm.system() == 'Linux':
             sp.call('pip3 install pygame', shell = True)
             sp.call('pip3 install cryptography', shell = True)
+            sp.call('pip3 install pillow', shell = True)
 
 def updateAll(pip: str | None) -> None:
     '''
