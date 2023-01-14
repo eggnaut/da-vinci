@@ -14,7 +14,7 @@ pg.init()
 
 def filter(path: str) -> None:
     '''
-    Will convert an image to black and white; overrides the original image.
+    Will convert an image to grayscale; overrides the original image.
 
     Args:
         path (str): path to the image you want to change
