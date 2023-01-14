@@ -12,17 +12,31 @@ import PIL
 import pygame as pg
 pg.init()
 
-def filter(path: str) -> None:
+def filter(path: str, type: str) -> None:
     '''
-    Will convert an image to grayscale; overrides the original image.
+    Applies a filter to the given image; overrides the original image
 
     Args:
-        path (str): path to the image you want to change
+        path (str): _description_
+        type (str): type of filter you want; options are: grayscale, blur, contour, emboss
     '''
     
-    image = PIL.Image.open(path)
-    image = image.convert('L')
-    image.save(path)
+    if type == 'grayscale':
+        image = PIL.Image.open(path)
+        image = image.convert('L')
+        image.save(path)
+    elif type == 'contour':
+        image = PIL.Image.open(path)
+        image = image.filter(PIL.ImageFilter.CONTOUR)
+        image.save(path)
+    elif type == 'blur':
+        image = PIL.Image.open(path)
+        image = image.filter(PIL.ImageFilter.BLUR)
+        image.save(path)
+    elif type == 'emboss':
+        image = PIL.Image.open(path)
+        image = image.filter(PIL.ImageFilter.EMBOSS)
+        image.save(path)
 
 def brighten(image: pg.Surface, brightness: tuple | None = (255, 255, 255)) -> pg.Surface:
     '''
