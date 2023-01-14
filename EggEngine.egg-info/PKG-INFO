@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: EggEngine
+Version: 0.0.1
+Summary: A custom framework/library written with and for Python.
+Home-page: https://github.com/eggnaut/EggEngine
+Download-URL: https://github.com/eggnaut/EggEngine
+Author: EggNaut
+Author-email: 
+License: MIT
