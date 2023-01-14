@@ -15,7 +15,7 @@ A custom framework/library written with and for Python.
 
 ![GitHub pull requests](https://img.shields.io/github/issues-pr/eggnaut/EggEngine?color=green&style=for-the-badge) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/eggnaut/EggEngine?color=red&style=for-the-badge)
 
-![GitHub language count](https://img.shields.io/github/languages/count/eggnaut/EggEngine?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/eggnaut/EggEngine?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/eggnaut/EggEngine?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/eggnaut/EggEngine?logo=Python&logoColor=yellow&style=for-the-badge)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/eggnaut/EggEngine?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/eggnaut/EggEngine?style=for-the-badge)
 
