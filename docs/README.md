@@ -50,7 +50,7 @@ module.dependencies()
 ```python
 EggEngine.module.dependencies()
 ```
-5. You're ready to use EggEngine on your device!
+5. You're ready to use EggEngine!
 
 ## Quick start:
 
