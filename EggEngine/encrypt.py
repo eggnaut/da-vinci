@@ -128,7 +128,7 @@ def encryptText(key: bytes, text: str) -> bytes:
     
     fernetObj = cr.Fernet(key)
     encrypted = fernetObj.encrypt(bytes(text, 'utf-8'))
-    return bytes.decode(encrypted,"utf-8")
+    return bytes.decode(encrypted, 'utf-8')
 
 def decryptText(key: bytes, encryptedText: str) -> str:
     '''
@@ -143,4 +143,4 @@ def decryptText(key: bytes, encryptedText: str) -> str:
     
     fernetObj = cr.Fernet(key)
     decrypted = fernetObj.decrypt(encryptedText)
-    return bytes.decode(decrypted,"utf-8")
+    return bytes.decode(decrypted, 'utf-8')
