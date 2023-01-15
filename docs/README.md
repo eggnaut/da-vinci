@@ -1,11 +1,11 @@
 # EggEngine
-A custom framework/library written with and for Python.
+A framework/library written with and for Python.
 
 ## Socials:
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/eggnaut/EggEngine?color=yellow&logo=Github&style=for-the-badge) ![GitHub watchers](https://img.shields.io/github/watchers/eggnaut/EggEngine?color=orange&logo=Github&style=for-the-badge) ![GitHub followers](https://img.shields.io/github/followers/eggnaut?logo=Github&style=for-the-badge)
 
-## Downloads:
+## Download:
 
 ![GitHub all releases](https://img.shields.io/github/downloads/eggnaut/EggEngine/total?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/eggnaut/EggEngine?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/eggnaut/EggEngine?style=for-the-badge)
 
@@ -13,9 +13,9 @@ A custom framework/library written with and for Python.
 
 ![GitHub issues](https://img.shields.io/github/issues/eggnaut/EggEngine?color=green&style=for-the-badge) ![GitHub closed issues](https://img.shields.io/github/issues-closed/eggnaut/EggEngine?color=red&style=for-the-badge)
 
-![GitHub pull requests](https://img.shields.io/github/issues-pr/eggnaut/EggEngine?color=green&style=for-the-badge) ![GitHub pull requests](https://img.shields.io/github/issues-pr/eggnaut/EggEngine?color=red&style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/eggnaut/EggEngine?color=green&style=for-the-badge) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/eggnaut/EggEngine?color=red&style=for-the-badge)
 
-![GitHub language count](https://img.shields.io/github/languages/count/eggnaut/EggEngine?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/eggnaut/EggEngine?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/eggnaut/EggEngine?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/eggnaut/EggEngine?logo=Python&logoColor=yellow&style=for-the-badge)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/eggnaut/EggEngine?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/eggnaut/EggEngine?style=for-the-badge)
 
@@ -28,6 +28,7 @@ EggEngine comes with 7 Python modules ready to use!
 5. `image`
 6. `module`
 7. `turtl`
+8. `ui` (experimental)
 
 ## Setup:
 This will install Python modules (or dependencies) that are required to allow all features of EggEngine to work as intended.
