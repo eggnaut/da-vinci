@@ -3,7 +3,7 @@ Part of EggEngine.
 
 Usage: 'from EggEngine import ui' or 'import EggEngine.ui'
 
-Useful and basic UI elements which currently include buttons with support for animations.
+Useful and basic UI elements as well as Pygame display-related functions.
 
 Made by @eggnaut
 '''
