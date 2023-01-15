@@ -43,7 +43,7 @@ from EggEngine import module
 ```python
 import EggEngine.module
 ```
-4. Next, add these line:
+4. Next, add this line:
 ```python
 module.dependencies()
 ```
