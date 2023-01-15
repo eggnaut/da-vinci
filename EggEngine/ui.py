@@ -65,6 +65,10 @@ class button(pg.sprite.Sprite):
         self.onHover()
         
 class quitButton(button):
+    '''
+    A basic button that, when clicked, exits the program.
+    '''
+    
     def __init__(self, imagePath: str | None, frames: list | None = None, hoverEffect: str | None = 'brighten', pos: tuple = (0, 0)):
         super().__init__(imagePath, frames, hoverEffect, pos)
         
