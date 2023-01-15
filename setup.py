@@ -28,7 +28,7 @@ setup(
 	# List of keywords 
 	keywords=[],
 	# List of packages to install with this one 
-	install_requires=['cryptography','Pillow','setuptools'],
+	install_requires=['cryptography','Pillow','setuptools', 'pygame'],
 	# https://pypi.org/classifiers/ 
 	classifiers=[]
 )
