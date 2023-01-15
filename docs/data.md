@@ -10,7 +10,7 @@ Made by @eggnaut
 
 ---
 
-## Sort
+## sort
 
 Sorts any Python list using the selection sort algorithm.
 
