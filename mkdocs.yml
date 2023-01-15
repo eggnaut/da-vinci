@@ -1,0 +1,5 @@
+site_name: EggEngine
+nav:
+    - Home: index.md
+    - Data: data.md
+theme: readthedocs

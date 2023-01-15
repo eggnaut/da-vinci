@@ -11,7 +11,7 @@ Made by @eggnaut
 import sys
 import cryptography.fernet as cr
 
-def generateKey(self) -> bytes:
+def generateKey() -> bytes:
     '''
     Generates a random key for encryption with Fernet from the cryptography module.
 
@@ -33,7 +33,7 @@ def generateKeyFile(file: str) -> None:
     
     key = cr.Fernet.generate_key()
 
-    with open(file, 'ab') as keyFile:
+    with open(file, 'wb') as keyFile:
         keyFile.write(key)
 
         keyFile.close()
@@ -90,7 +90,7 @@ def encryptFile(key: bytes, file: str) -> None:
 
 def decryptFile(key: bytes, file: str) -> None:
     '''
-    Decrypts (into original form) a file givena  key using Fernet from the cryptography module.
+    Decrypts (into original form) a file given key using Fernet from the cryptography module.
 
     Args:
         key (bytes): the key used for decrypting the file (must be same as encrypting)
@@ -114,3 +114,33 @@ def decryptFile(key: bytes, file: str) -> None:
         newFile.write(decrypted)
 
         newFile.close()
+
+def encryptText(key: bytes, text: str) -> bytes:
+    '''
+    Encrypts (into gibberish) a text given a key using Fernet from the cryptography module.
+    
+    Args:
+        key (bytes): the key used for encrypting the text (keep same throughout encryption process)
+        text (str): the text you want to encrypt
+    Returns:
+        text (bytes): the encryted text
+    '''
+    
+    fernetObj = cr.Fernet(key)
+    encrypted = fernetObj.encrypt(bytes(text, 'utf-8'))
+    return bytes.decode(encrypted,"utf-8")
+
+def decryptText(key: bytes, encryptedText: str) -> str:
+    '''
+    Decrypts (into original form) a encryptedText given key using Fernet from the cryptography module.
+
+    Args:
+        key (bytes): the key used for decrypting the encryptedText (must be same as encrypting)
+        encryptedText (str): the encryptedText you want to decrypt
+    Returns:
+        text (str): the decrypted text
+    '''
+    
+    fernetObj = cr.Fernet(key)
+    decrypted = fernetObj.decrypt(encryptedText)
+    return bytes.decode(decrypted,"utf-8")
