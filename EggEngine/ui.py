@@ -12,6 +12,20 @@ import sys
 import pygame as pg
 pg.init()
 
+def center() -> tuple:
+    '''
+    Returns the center of a Pygame display surface in coordinates.
+
+    Returns:
+        centerPos (tuple): the center of the screen as coordinates
+    '''
+    
+    x = pg.display.get_window_size()[0]
+    y = pg.display.get_window_size()[1]
+    centerPos = (x / 2, y / 2)
+    
+    return centerPos
+
 class button(pg.sprite.Sprite):
     '''
     A base class to make animated, hoverable and clickable buttons.
