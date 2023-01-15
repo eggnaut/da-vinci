@@ -13,6 +13,11 @@ import pygame as pg
 pg.init()
 
 class button(pg.sprite.Sprite):
+    '''
+    A base class to make animated, hoverable and clickable buttons.
+    
+    You need to program the on-click actions for each button yourself.
+    '''
     def __init__(self, imagePath: str | None, frames: list | None = None, hoverEffect: str | None = 'brighten', pos: tuple = (0, 0)):
         super().__init__()
         
