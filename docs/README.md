@@ -53,7 +53,7 @@ EggEngine.module.dependencies()
 ```
 5. You're ready to use EggEngine!
 
-## Quick start:
+## Integration:
 
 Obviously, the first step would be to download the repository or from the latest release. Then, follow these steps:
 
