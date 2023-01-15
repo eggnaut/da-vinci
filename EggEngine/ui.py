@@ -8,7 +8,7 @@ Useful and basic UI elements which currently include buttons with support for an
 Made by @eggnaut
 '''
 
-import os
+import sys
 import pygame as pg
 pg.init()
 
@@ -63,3 +63,16 @@ class button(pg.sprite.Sprite):
                 self.frameIndex = 0
 
         self.onHover()
+        
+class quitButton(button):
+    def __init__(self, imagePath: str | None, frames: list | None = None, hoverEffect: str | None = 'brighten', pos: tuple = (0, 0)):
+        super().__init__(imagePath, frames, hoverEffect, pos)
+        
+    def onClick(self):
+        mousePos = pg.mouse.get_pos()
+        if self.rect.collidepoint(mousePos):
+            if pg.mouse.get_pressed()[0]:
+                sys.exit()
+        
+    def update(self):
+        pass
