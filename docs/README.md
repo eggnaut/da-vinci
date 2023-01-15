@@ -51,7 +51,8 @@ module.dependencies()
 ```python
 EggEngine.module.dependencies()
 ```
-5. You're ready to use EggEngine!
+5. Run/execute the Python file.
+6. You're ready to use EggEngine!
 
 ## Integration:
 
