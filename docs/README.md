@@ -1,6 +1,8 @@
 # EggEngine
 A framework/library written with and for Python.
 
+Currently in development.
+
 ## Socials:
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/eggnaut/EggEngine?color=yellow&logo=Github&style=for-the-badge) ![GitHub watchers](https://img.shields.io/github/watchers/eggnaut/EggEngine?color=orange&logo=Github&style=for-the-badge)
