@@ -22,7 +22,7 @@ def center() -> tuple:
     
     width = pg.display.get_window_size()[0]
     length = pg.display.get_window_size()[1]
-    centerPos = (width / 2, length / 2)
+    centerPos = (width / 2, height / 2)
     
     return centerPos
 
