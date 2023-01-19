@@ -20,9 +20,9 @@ def center() -> tuple:
         centerPos (tuple): the center of the screen as coordinates
     '''
     
-    x = pg.display.get_window_size()[0]
-    y = pg.display.get_window_size()[1]
-    centerPos = (x / 2, y / 2)
+    width = pg.display.get_window_size()[0]
+    length = pg.display.get_window_size()[1]
+    centerPos = (width / 2, length / 2)
     
     return centerPos
 
