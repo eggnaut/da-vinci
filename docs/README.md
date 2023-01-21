@@ -54,6 +54,7 @@ EggEngine.module.dependencies()
 ```
 5. Run/execute the Python file.
 6. You're ready to use EggEngine!
+7. You can now delete this file.
 
 ## Integration:
 
