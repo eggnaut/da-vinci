@@ -21,7 +21,7 @@ Currently in development.
 ![GitHub last commit](https://img.shields.io/github/last-commit/eggnaut/EggEngine?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/eggnaut/EggEngine?style=for-the-badge)
 
 ## Features:
-EggEngine comes with 8 Python modules ready to use!
+EggEngine comes with 9 Python modules ready to use!
 1. `data`
 2. `debug`
 3. `encrypt`
@@ -30,6 +30,7 @@ EggEngine comes with 8 Python modules ready to use!
 6. `module`
 7. `turtl`
 8. `ui` (experimental)
+9. 'entities' (experimental)
 
 ## Setup:
 This will install Python modules (or dependencies) that are required to allow all features of EggEngine to work as intended.
