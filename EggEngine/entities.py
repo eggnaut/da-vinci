@@ -12,6 +12,17 @@ import pygame as pg
 pg.init()
 
 def isColliding(sprite: pg.sprite.Sprite, obstacles: pg.sprite.Group | pg.sprite.GroupSingle) -> bool:
+    '''
+    Checks if any sprites within a Pygame group collide with another sprite.
+
+    Args:
+        sprite (pg.sprite.Sprite): the original sprite you want to check for collisions
+        obstacles (pg.sprite.Group | pg.sprite.GroupSingle): check if these sprites are colliding with the original sprite
+
+    Returns:
+        bool: whether or not any collisions happened with any of the obstacle sprites
+    '''
+    
     collisions = 0
     
     for obj in obstacles:
@@ -24,6 +35,17 @@ def isColliding(sprite: pg.sprite.Sprite, obstacles: pg.sprite.Group | pg.sprite
         return False
 
 def collideTop(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
+    '''
+    Checks if an obstacle sprite collides with the top of another sprite.
+
+    Args:
+        sprite (pg.sprite.Sprite): the original sprite you want to check for collisions
+        obstacle (pg.sprite.Sprite): the sprite that will collide with the original sprite
+
+    Returns:
+        bool: if the top of the original sprite collided with the obstacle sprite or not
+    '''
+    
     sCoords = {
         'topLeft' : sprite.rect.topleft,
         'topRight' : sprite.rect.topright,
@@ -48,6 +70,17 @@ def collideTop(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
         return False
     
 def collideBottom(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
+    '''
+    Checks if an obstacle sprite collides with the bottom of another sprite.
+
+    Args:
+        sprite (pg.sprite.Sprite): the original sprite you want to check for collisions
+        obstacle (pg.sprite.Sprite): the sprite that will collide with the original sprite
+
+    Returns:
+        bool: if the bottom of the original sprite collided with the obstacle sprite or not
+    '''
+    
     sCoords = {
         'topLeft' : sprite.rect.topleft,
         'topRight' : sprite.rect.topright,
@@ -72,6 +105,17 @@ def collideBottom(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
         return False
     
 def collideLeft(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
+    '''
+    Checks if an obstacle sprite collides with the left of another sprite.
+
+    Args:
+        sprite (pg.sprite.Sprite): the original sprite you want to check for collisions
+        obstacle (pg.sprite.Sprite): the sprite that will collide with the original sprite
+
+    Returns:
+        bool: if the left of the original sprite collided with the obstacle sprite or not
+    '''
+    
     sCoords = {
         'topLeft' : sprite.rect.topleft,
         'topRight' : sprite.rect.topright,
@@ -96,6 +140,17 @@ def collideLeft(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
         return False
 
 def collideRight(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
+    '''
+    Checks if an obstacle sprite collides with the right of another sprite.
+
+    Args:
+        sprite (pg.sprite.Sprite): the original sprite you want to check for collisions
+        obstacle (pg.sprite.Sprite): the sprite that will collide with the original sprite
+
+    Returns:
+        bool: if the right of the original sprite collided with the obstacle sprite or not
+    '''
+    
     sCoords = {
         'topLeft' : sprite.rect.topleft,
         'topRight' : sprite.rect.topright,
