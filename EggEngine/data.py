@@ -11,6 +11,16 @@ Made by @eggnaut
 import random as rd
 
 def isInt(num: float | int) -> bool:
+    '''
+    Checks if a data value is a integer or float.
+    
+    Args:
+        num (float | int): the data value you want to check
+        
+    Returns:
+        ans (bool): whether the data value is a integer or not
+    '''
+    
     return ((num % 1) == 0)
 
 def sort(target: list) -> list:
