@@ -10,6 +10,9 @@ Made by @eggnaut
 
 import random as rd
 
+def isInt(num: float | int) -> bool:
+    return ((num % 1) == 0)
+
 def sort(target: list) -> list:
     '''
     Sorts any Python list using the selection sort algorithm.
