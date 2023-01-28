@@ -32,7 +32,7 @@ EggEngine comes with 9 Python modules ready to use!
 8. `ui` (experimental)
 9. `entities` (experimental)
 
-Note: modules marked with 'experimental' may not function properly and may contain bugs.
+**Note:** Modules marked with 'experimental' may not function properly and may contain bugs.
 
 ## Setup:
 This will install Python modules (or dependencies) that are required to allow all features of EggEngine to work as intended.
