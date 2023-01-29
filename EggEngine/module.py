@@ -12,9 +12,40 @@ import sys
 import subprocess as sp
 import platform as pm
 
+def autoUpdate(pip: str | None, path: str) -> None:
+    '''
+    Automatically updates all Python packages from a file.
+
+    Args:
+        pip (str | None): for macOS: pip3, for Windows: pip, this is a terminal/shell command
+        path (str): the path to the file (preferably .txt) where the package names are listed (one per line)
+    '''
+    
+    try:
+        with open(path, 'r') as file:
+            lines = file.readlines()
+            
+            for line in range(lines):
+                package = line.readline()
+                
+                if pip:
+                    try:
+                        sp.call(f'{pip} install {package}', shell = True)
+                    except:
+                        print(f'\nEggEngine.module.autoUpdate() was unable to update the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
+                        sys.exit()
+                else:
+                    if pm.system() == 'Windows':
+                        sp.call(f'pip install --upgrade {package}', shell = True)
+                    elif pm.system() == 'Darwin' or pm.system() == 'Linux':
+                        sp.call(f'pip3 install --upgrade {package}', shell = True)
+            file.close()
+    except FileNotFoundError:
+        print(f'\nEggEngine.module.autoUpdate() was unable to open the file.\nError: {path} doesn\'t exist.\nPlease make sure the path provided is correct.')
+
 def autoInstall(pip: str | None, path: str) -> None:
     '''
-    Automatically installs all Python packages in a file.
+    Automatically installs all Python packages from a file.
 
     Args:
         pip (str | None): for macOS: pip3, for Windows: pip, this is a terminal/shell command
