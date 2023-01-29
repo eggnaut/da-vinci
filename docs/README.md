@@ -22,15 +22,15 @@ Currently in development.
 
 ## Features:
 EggEngine comes with 9 Python modules ready to use!
-1. `data` (functional)
-2. `debug` (functional)
-3. `encrypt` (functional)
-4. `files` (functional)
-5. `image` (functional)
-6. `module` (functional)
-7. `turtl` (functional)
-8. `ui` (experimental)
-9. `entities` (experimental)
+1. `data`
+2. `debug`
+3. `encrypt`
+4. `files`
+5. `image`
+6. `module` (*experimental*)
+7. `turtl`
+8. `ui` (*experimental*)
+9. `entities` (*experimental*)
 
 **Note:** Modules marked with 'experimental' may not function properly and may contain bugs.
 
