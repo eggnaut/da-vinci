@@ -35,10 +35,15 @@ def autoUpdate(pip: str | None, path: str) -> None:
                         print(f'\nEggEngine.module.autoUpdate() was unable to update the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
                         sys.exit()
                 else:
-                    if pm.system() == 'Windows':
-                        sp.call(f'pip install --upgrade {package}', shell = True)
-                    elif pm.system() == 'Darwin' or pm.system() == 'Linux':
-                        sp.call(f'pip3 install --upgrade {package}', shell = True)
+                    try:
+                        if pm.system() == 'Windows':
+                            sp.call(f'pip install --upgrade {package}', shell = True)
+                        elif pm.system() == 'Darwin' or pm.system() == 'Linux':
+                            sp.call(f'pip3 install --upgrade {package}', shell = True)
+                    except:
+                        print(f'\nEggEngine.module.autoUpdate() was unable to update the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
+                        sys.exit()
+        
             file.close()
     except FileNotFoundError:
         print(f'\nEggEngine.module.autoUpdate() was unable to open the file.\nError: {path} doesn\'t exist.\nPlease make sure the path provided is correct.')
