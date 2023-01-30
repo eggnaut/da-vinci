@@ -19,7 +19,7 @@ A framework/library written with and for Python.
 ![GitHub last commit](https://img.shields.io/github/last-commit/eggnaut/EggEngine?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/eggnaut/EggEngine?style=for-the-badge)
 
 ## Features:
-EggEngine comes with 9 Python modules ready to use!
+EggEngine comes with 8 Python modules ready to use!
 1. `data`
 2. `debug`
 3. `encrypt`
@@ -27,8 +27,7 @@ EggEngine comes with 9 Python modules ready to use!
 5. `image`
 6. `module` (*experimental*)
 7. `turtl`
-8. `ui` (*experimental*)
-9. `entities` (*experimental*)
+8. `game` (*experimental*)
 
 **Note:** Modules marked with 'experimental' may not function properly and may contain bugs.
 
