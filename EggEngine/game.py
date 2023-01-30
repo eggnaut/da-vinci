@@ -1,7 +1,7 @@
 '''
 Part of EggEngine.
 
-Usage: 'from EggEngine import entities' or 'import EggEngine.entities'
+Usage: 'from EggEngine import game' or 'import EggEngine.game'
 
 Useful functions and classes game development with Pygame.
 
