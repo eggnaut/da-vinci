@@ -3,13 +3,27 @@ Part of EggEngine.
 
 Usage: 'from EggEngine import entities' or 'import EggEngine.entities'
 
-Useful functions and classes for entities, mainly collisions between Pygame sprites.
+Useful functions and classes game development with Pygame.
 
 Made by @eggnaut
 '''
 
 import pygame as pg
 pg.init()
+
+def center() -> tuple:
+    '''
+    Returns the center of a Pygame display surface in coordinates.
+
+    Returns:
+        centerPos (tuple): the center of the screen as coordinates
+    '''
+    
+    width = pg.display.get_window_size()[0]
+    length = pg.display.get_window_size()[1]
+    centerPos = (width / 2, length / 2)
+    
+    return centerPos
 
 def isColliding(sprite: pg.sprite.Sprite, obstacles: pg.sprite.Group | pg.sprite.GroupSingle) -> bool:
     '''
