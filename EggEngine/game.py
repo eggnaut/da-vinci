@@ -3,7 +3,7 @@ Part of EggEngine.
 
 Usage: 'from EggEngine import game' or 'import EggEngine.game'
 
-Useful functions and classes game development with Pygame.
+Useful functions and classes for game development with Pygame.
 
 Made by @eggnaut
 '''
