@@ -8,8 +8,20 @@ Useful functions and classes for game development with Pygame.
 Made by @eggnaut
 '''
 
+import math as mt
 import pygame as pg
 pg.init()
+
+def pointMouse(sprite: pg.sprite.Sprite) -> None:
+    mouseX, mouseY = pg.mouse.get_pos()
+    
+    angleRad = mt.atan2(sprite.rect.centerx - mouseX, sprite.rect.centery - mouseY)
+    angle = mt.degrees(angleRad)
+    
+    if mouseX < sprite.rect.centerx:
+        sprite.image = pg.transform.rotate(pg.transform.flip(sprite.image, True, False), angle - 90)
+    else:
+        sprite.image = pg.transform.rotate(sprite.image, angle + 90)
 
 def center() -> tuple:
     '''
