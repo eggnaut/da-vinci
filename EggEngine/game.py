@@ -13,6 +13,13 @@ import pygame as pg
 pg.init()
 
 def pointMouse(sprite: pg.sprite.Sprite) -> None:
+    '''
+    Rotates a sprite's image to point towards the mouse-pointer.
+
+    Args:
+        sprite (pg.sprite.Sprite): the sprite that you want to rotate
+    '''
+    
     mouseX, mouseY = pg.mouse.get_pos()
     
     angleRad = mt.atan2(sprite.rect.centerx - mouseX, sprite.rect.centery - mouseY)
