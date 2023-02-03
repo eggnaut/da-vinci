@@ -10,6 +10,19 @@ Made by @eggnaut
 
 import random as rd
 
+def isPos(num : float | int) -> bool:
+    '''
+    CHecks if a data value is positive or equal to 0.
+    
+    Args:
+        num (float | int): the data value you want to check
+    
+    Returns:
+        ans (bool): whether the data value is positive or equal to 0 or not
+    '''
+    
+    return num >= 0
+
 def isInt(num: float | int) -> bool:
     '''
     Checks if a data value is a integer or float.
