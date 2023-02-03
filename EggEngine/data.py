@@ -21,7 +21,7 @@ def isInt(num: float | int) -> bool:
         ans (bool): whether the data value is a integer or not
     '''
     
-    return ((num % 1) == 0)
+    return (num % 1) == 0
 
 def sort(target: list) -> list:
     '''
