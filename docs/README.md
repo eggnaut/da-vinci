@@ -24,7 +24,7 @@ EggEngine comes with 8 Python modules ready to use!
 2. `debug`
 3. `encrypt`
 4. `files`
-5. `image` (*experimental*)
+5. `image`
 6. `module` (*experimental*)
 7. `turtl`
 8. `game` (*experimental*)

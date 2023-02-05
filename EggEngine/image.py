@@ -9,26 +9,8 @@ Made by @eggnaut
 '''
 
 import PIL
-import io
-import urllib.request as ul
 import pygame as pg
 pg.init()
-
-def loadUrl(url: str) -> bytes:
-    '''
-    Loads an image and returns it as bytes, which can be used with Pygame.
-    
-    Args:
-        url (str): the url to the image
-        
-    Returns:
-        img (bytes): the image, in bytes form, can be used with pygame.image.load()
-    '''
-    
-    imgUrl = ul.urlopen(url).read()
-    img = io.BytesIO(imgUrl)
-    
-    return img
 
 def filter(path: str, type: str, show: bool = False) -> None:
     '''
