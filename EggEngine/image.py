@@ -10,7 +10,7 @@ Made by @eggnaut
 
 import PIL
 import io
-import urllib2 as ul
+import urllib.request as ul
 import pygame as pg
 pg.init()
 
