@@ -30,6 +30,7 @@ EggEngine comes with 8 Python modules ready to use!
 8. `game` (*experimental*)
 
 **Note:** Modules marked with 'experimental' may not function properly and may contain bugs.
+
 **Note**: This framework has not been tested on Windows or Linux and may not work on them at all.
 
 ## Setup:
