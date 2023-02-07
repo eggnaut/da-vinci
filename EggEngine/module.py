@@ -3,7 +3,7 @@ Part of EggEngine.
 
 Usage: 'from EggEngine import module' or 'import EggEngine.module'
 
-Includes functions to install dependencies for EggEngine as well as update every Python package installed.
+Includes functions to install dependencies for EggEngine as well as functions relating to Python packages.
 
 Made by @eggnaut
 '''
