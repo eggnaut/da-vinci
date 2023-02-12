@@ -1,7 +1,7 @@
 '''
-Part of EggEngine.
+Part of da vinci.
 
-Usage: 'from EggEngine import turtl' or 'import EggEngine.turtl'
+Usage: 'from davinci import turtl' or 'import davinci.turtl'
 
 Includes functions for drawing custom shapes/polygons with customizability and ease. Utilizes Turtle from turtle module.
 

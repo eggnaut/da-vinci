@@ -1,9 +1,9 @@
 '''
-Part of EggEngine.
+Part of da vinci.
 
-Usage: 'from EggEngine import module' or 'import EggEngine.module'
+Usage: 'from davinci import module' or 'import davinci.module'
 
-Includes functions to install dependencies for EggEngine as well as functions relating to Python packages.
+Includes functions to install dependencies for da vinci as well as functions relating to Python packages.
 
 Made by @eggnaut
 '''

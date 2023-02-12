@@ -1,7 +1,7 @@
 '''
-Part of EggEngine.
+Part of da vinci.
 
-Usage: 'from EggEngine import files' or 'import EggEngine.files'
+Usage: 'from davinci import files' or 'import davinci.files'
 
 Includes functions for reading content from and writing content to files.
 

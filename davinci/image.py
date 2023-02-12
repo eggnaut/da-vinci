@@ -1,7 +1,7 @@
 '''
-Part of EggEngine.
+Part of da vinci.
 
-Usage: 'from EggEngine import image' or 'import EggEngine.image'
+Usage: 'from davinci import image' or 'import davinci.image'
 
 Includes functions for changing images' appearances and size.
 

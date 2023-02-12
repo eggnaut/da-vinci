@@ -1,7 +1,7 @@
 '''
-Part of EggEngine.
+Part of da vinci.
 
-Usage: 'from EggEngine import data' or 'import EggEngine.data'
+Usage: 'from davinci import data' or 'import davinci.data'
 
 Includes many useful functions related to data and data storage within Python, mainly lists and 2D lists (arrays).
 

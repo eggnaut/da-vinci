@@ -1,7 +1,7 @@
 '''
-Part of EggEngine.
+Part of da vinci.
 
-Usage: 'from EggEngine import debug' or 'import EggEngine.debug'
+Usage: 'from davinci import debug' or 'import davinci.debug'
 
 Includes functions for debugging in Python as well as OS-related functions.
 

@@ -1,7 +1,7 @@
 '''
-Part of EggEngine.
+Part of da vinci.
 
-Usage: 'from EggEngine import encrypt' or 'import EggEngine.encrypt'
+Usage: 'from davinci import encrypt' or 'import davinci.encrypt'
 
 Includes many useful functions for encryption and decryption of files. Utilizes Fernet from cryptography module.
 

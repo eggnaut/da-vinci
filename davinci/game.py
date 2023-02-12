@@ -1,7 +1,7 @@
 '''
-Part of EggEngine.
+Part of da vinci.
 
-Usage: 'from EggEngine import game' or 'import EggEngine.game'
+Usage: 'from davinci import game' or 'import davinci.game'
 
 Useful functions and classes for game development with Pygame.
 
