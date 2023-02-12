@@ -32,7 +32,7 @@ def autoUpdate(pip: str | None, path: str) -> None:
                     try:
                         sp.call(f'{pip} install {package}', shell = True)
                     except:
-                        print(f'\nEggEngine.module.autoUpdate() was unable to update the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
+                        print(f'\ndavinci.module.autoUpdate() was unable to update the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
                         sys.exit()
                 else:
                     try:
@@ -41,12 +41,12 @@ def autoUpdate(pip: str | None, path: str) -> None:
                         elif pm.system() == 'Darwin' or pm.system() == 'Linux':
                             sp.call(f'pip3 install --upgrade {package}', shell = True)
                     except:
-                        print(f'\nEggEngine.module.autoUpdate() was unable to update the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
+                        print(f'\ndavinci.module.autoUpdate() was unable to update the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
                         sys.exit()
         
             file.close()
     except FileNotFoundError:
-        print(f'\nEggEngine.module.autoUpdate() was unable to open the file.\nError: {path} doesn\'t exist.\nPlease make sure the path provided is correct.')
+        print(f'\ndavinci.module.autoUpdate() was unable to open the file.\nError: {path} doesn\'t exist.\nPlease make sure the path provided is correct.')
 
 def autoInstall(pip: str | None, path: str) -> None:
     '''
@@ -68,7 +68,7 @@ def autoInstall(pip: str | None, path: str) -> None:
                     try:
                         sp.call(f'{pip} install {package}', shell = True)
                     except:
-                        print(f'\nEggEngine.module.autoInstall() was unable to install the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
+                        print(f'\ndavinci.module.autoInstall() was unable to install the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
                         sys.exit()
                 else:
                     if pm.system() == 'Windows':
@@ -77,7 +77,7 @@ def autoInstall(pip: str | None, path: str) -> None:
                         sp.call(f'pip3 install {package}', shell = True)
             file.close()
     except FileNotFoundError:
-        print(f'\nEggEngine.module.autoInstall() was unable to open the file.\nError: {path} doesn\'t exist.\nPlease make sure the path provided is correct.')
+        print(f'\ndavinci.module.autoInstall() was unable to open the file.\nError: {path} doesn\'t exist.\nPlease make sure the path provided is correct.')
 
 def dependencies(pip: str | None) -> None:
     '''
@@ -93,7 +93,7 @@ def dependencies(pip: str | None) -> None:
             sp.call(f'{pip} install cryptography', shell = True)
             sp.call(f'{pip} install pillow', shell = True)
         except:
-            print(f'\nEggEngine.module.dependencies() was unable to install dependencies.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
+            print(f'\ndavinci.module.dependencies() was unable to install dependencies.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
             sys.exit()
     else:
         if pm.system() == 'Windows':
@@ -117,7 +117,7 @@ def updateAll(pip: str | None) -> None:
         try:
             sp.call(f'{pip} list --outdated > outdated.txt', shell = True)
         except:
-            print(f'\nEggEngine.module.updateAll() was unable to update modules.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
+            print(f'\ndavinci.module.updateAll() was unable to update modules.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
             sys.exit()
     else:
         if pm.system() == 'Windows':
