@@ -5,24 +5,24 @@ An all-purpose framework/library written with and for Python.
 
 ## Socials:
 
-![GitHub Repo stars](https://img.shields.io/github/stars/eggnaut/EggEngine?color=yellow&logo=Github&style=for-the-badge) ![GitHub watchers](https://img.shields.io/github/watchers/eggnaut/EggEngine?color=orange&logo=Github&style=for-the-badge)
+![GitHub Repo stars](https://img.shields.io/github/stars/eggnaut/da-vinci?color=yellow&logo=Github&style=for-the-badge) ![GitHub watchers](https://img.shields.io/github/watchers/eggnaut/EggEngine?color=orange&logo=Github&style=for-the-badge)
 
 ## Download:
 
-![GitHub all releases](https://img.shields.io/github/downloads/eggnaut/EggEngine/total?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/eggnaut/EggEngine?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/eggnaut/EggEngine?style=for-the-badge)
+![GitHub all releases](https://img.shields.io/github/downloads/eggnaut/da-vinci/total?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/eggnaut/da-vinci?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/eggnaut/da-vinci?style=for-the-badge)
 
 ## Developers:
 
-![GitHub issues](https://img.shields.io/github/issues/eggnaut/EggEngine?color=green&style=for-the-badge) ![GitHub closed issues](https://img.shields.io/github/issues-closed/eggnaut/EggEngine?color=red&style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/eggnaut/da-vinci?color=green&style=for-the-badge) ![GitHub closed issues](https://img.shields.io/github/issues-closed/eggnaut/da-vinci?color=red&style=for-the-badge)
 
-![GitHub pull requests](https://img.shields.io/github/issues-pr/eggnaut/EggEngine?color=green&style=for-the-badge) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/eggnaut/EggEngine?color=red&style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/eggnaut/da-vinci?color=green&style=for-the-badge) ![GitHub closed pull requests](https://img.shields.io/github/issues-pr-closed/eggnaut/da-vinci?color=red&style=for-the-badge)
 
-![GitHub language count](https://img.shields.io/github/languages/count/eggnaut/EggEngine?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/eggnaut/EggEngine?logo=Python&logoColor=yellow&style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/eggnaut/da-vinci?style=for-the-badge) ![GitHub top language](https://img.shields.io/github/languages/top/eggnaut/da-vinci?logo=Python&logoColor=yellow&style=for-the-badge)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/eggnaut/EggEngine?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/eggnaut/EggEngine?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/eggnaut/da-vinci?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/eggnaut/da-vinci?style=for-the-badge)
 
 ## Features:
-EggEngine comes with 8 Python modules ready to use!
+da vinci comes with 8 Python modules ready to use!
 1. `data`
 2. `debug`
 3. `encrypt`
@@ -58,7 +58,7 @@ module.dependencies()
 EggEngine.module.dependencies()
 ```
 5. Run/execute the Python file.
-6. You're ready to use EggEngine!
+6. You're ready to use da vinci!
 7. You can now delete this file.
 
 ## Integration:
