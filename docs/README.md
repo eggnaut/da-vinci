@@ -34,7 +34,7 @@ da vinci comes with 8 Python modules ready to use!
 
 **Note:** Modules marked with 'experimental' may not function properly and may contain bugs.
 
-**Note**: This framework has not been tested on Windows or Linux and may not work on them at all.
+**Note**: This framework/library has not been tested on Windows or Linux and may not work on them at all.
 
 ## Setup:
 This will install Python modules (or dependencies) that are required to allow all features of EggEngine to work as intended.
