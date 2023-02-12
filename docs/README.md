@@ -1,5 +1,7 @@
-# EggEngine
+<div align = 'center'>
+<h1> EggEngine </h1>
 A framework/library written with and for Python.
+</div>
 
 ## Socials:
 
