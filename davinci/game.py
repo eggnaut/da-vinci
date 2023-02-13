@@ -12,6 +12,18 @@ import math as mt
 import pygame as pg
 pg.init()
 
+def hideWelcome() -> None:
+    '''
+    Hides the Pygame welcome statement. This statement usually shows Pygame and SDL versions.
+    Can be quite annoying in commercial/distributed games.
+
+    Please call this function before importing Pygame.
+    '''
+
+    import os
+    os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = 'hide'
+    del os
+
 def pointMouse(sprite: pg.sprite.Sprite) -> None:
     '''
     Rotates a sprite's image to point towards the mouse-pointer.
