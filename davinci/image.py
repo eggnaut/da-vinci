@@ -17,7 +17,7 @@ def filter(path: str, type: str, show: bool = False) -> None:
     Applies a filter to the given image; overrides the original image
 
     Args:
-        path (str): _description_
+        path (str): the path to the file
         type (str): type of filter you want; options are: grayscale, blur, contour, emboss
         show (bool): if you want to see the filtered image. defaults to False.
     '''
