@@ -3,14 +3,36 @@ Part of da vinci.
 
 Usage: 'from davinci import game' or 'import davinci.game'
 
-Useful functions and classes for game development with Pygame.
+Useful functions and classes that speed up game development with Pygame.
 
 Made by @eggnaut
 '''
 
+import os
 import math as mt
 import pygame as pg
 pg.init()
+
+def loadFolder(path: str) -> list:
+    '''
+    Loads all the images (using Pygame) within a directory. These images are ret
+
+    Args:
+        path (str): the path to the directory/folder
+
+    Returns:
+        imgs (list): a list of loaded Pygame images
+    '''
+
+    imgs = []
+    contents = os.listdir(path)
+
+    for obj in contents:
+        if os.path.isfile(obj):
+            temp = pg.image.load(obj)
+            imgs.append(temp)
+
+    return imgs
 
 def hideWelcome() -> None:
     '''
