@@ -44,7 +44,6 @@ def hideWelcome() -> None:
 
     import os
     os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = 'hide'
-    del os
 
 def pointMouse(sprite: pg.sprite.Sprite) -> None:
     '''
