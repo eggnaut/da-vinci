@@ -39,7 +39,7 @@ def hideWelcome() -> None:
     Hides the Pygame welcome statement. This statement usually shows Pygame and SDL versions.
     Can be quite annoying in commercial/distributed games.
 
-    Please call this function before importing Pygame.
+    Must be called (the function) before importing Pygame.
     '''
 
     import os
