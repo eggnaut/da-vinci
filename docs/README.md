@@ -75,7 +75,7 @@ from davinci import <module you want to use>
 ```python
 from davinci import data
 ```
-- When calling the function `generateList()`, this is what it would look like:
+- If I wanted to use the `generateList()` function, this is what it would look like:
 ```python
 data.generateList(...)
 ```
