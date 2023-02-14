@@ -10,6 +10,26 @@ Made by @eggnaut
 
 import sys
 
+def totalLines(path: str) -> int:
+    '''
+    Returns the total number of lines (the sum of all the files' lines) in a directory.
+
+    Args:
+        path (str): the path to the directory
+
+    Returns:
+        total (int): the total number of lines
+    '''
+    
+    total = 0
+
+    for file in path:
+        with open(file, 'r') as f:
+            lines = f.readlines()
+            total += len(lines)
+
+    return total
+
 def numLines(path: str) -> int:
     '''
     Returns the number of lines in the file.
