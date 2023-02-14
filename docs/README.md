@@ -75,9 +75,9 @@ from davinci import <module you want to use>
 ```python
 from davinci import data
 ```
-- When calling functions, this is what it would look like:
+- When calling the function `generateList()`, this is what it would look like:
 ```python
-data.function()
+data.generateList(...)
 ```
 -  Another (not recommended) alternative:
 ```python
