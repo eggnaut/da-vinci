@@ -89,6 +89,6 @@ import davinci.data
 ```
 - The downside to this import statement is when calling functions, you must type out the parent module, then the module, and finally the function like this:
 ```python
-davinci.data.function()
+davinci.data.generateList(...)
 ```
 3. Now you're ready to start using da vinci in your project!
