@@ -10,6 +10,23 @@ Made by @eggnaut
 
 import sys
 
+def numLines(path: str) -> int:
+    '''
+    Returns the number of lines in the file.
+
+    Args:
+        path (str): the path to the file
+
+    Returns:
+        length (int): the number of lines in the file
+    '''
+
+
+    with open(path, 'r') as file:
+        lines = file.readlines()
+
+    return len(lines)
+
 def readFile(path: str) -> str | int | bytes:
     '''
     Reads the contents of a file.
@@ -18,7 +35,7 @@ def readFile(path: str) -> str | int | bytes:
         path (str): the path to the file
 
     Returns:
-        str | int | bytes: the contents of the file
+        contents (str | int | bytes): the contents of the file
     '''
     
     try:
