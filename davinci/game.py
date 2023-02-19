@@ -9,9 +9,18 @@ Made by @eggnaut
 '''
 
 import os
+import sys
 import math as mt
 import pygame as pg
 pg.init()
+
+def close() -> None:
+    '''
+    Properly exits a Pygame application.
+    '''
+
+    pg.quit()
+    sys.exit()
 
 def loadFolder(path: str) -> list:
     '''
