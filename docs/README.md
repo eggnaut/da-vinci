@@ -10,7 +10,7 @@ An all-purpose framework/library written with and for Python.
 
 ## Download:
 
-![GitHub all releases](https://img.shields.io/github/downloads/eggnaut/da-vinci/total?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/eggnaut/da-vinci?style=for-the-badge) ![GitHub](https://img.shields.io/github/license/eggnaut/da-vinci?style=for-the-badge)
+![GitHub all releases](https://img.shields.io/github/downloads/eggnaut/da-vinci/total?style=for-the-badge) ![GitHub repo size](https://img.shields.io/github/repo-size/eggnaut/da-vinci?style=for-the-badge) ![GitHub](https://img.shields.io/static/v1?label=License&message=LGPL-2.1&color=orange&style=for-the-badge)
 
 ## Developers:
 
