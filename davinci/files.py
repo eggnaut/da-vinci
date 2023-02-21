@@ -41,13 +41,12 @@ def numLines(path: str) -> int:
         length (int): the number of lines in the file
     '''
 
-
     with open(path, 'r') as file:
         lines = file.readlines()
 
     return len(lines)
 
-def readFile(path: str) -> str | int | bytes:
+def readFile(path: str) -> Any:
     '''
     Reads the contents of a file.
 
@@ -55,7 +54,7 @@ def readFile(path: str) -> str | int | bytes:
         path (str): the path to the file
 
     Returns:
-        contents (str | int | bytes): the contents of the file
+        contents (Any): the contents of the file
     '''
     
     try:
@@ -67,13 +66,13 @@ def readFile(path: str) -> str | int | bytes:
         print(f'\ndavinci.files.readFile() was unable to read the file given.\nFileNotFoundError: {path} does not exist.\nPlease make sure the path provided is correct.\n')
         sys.exit()
 
-def writeFile(path: str, content: str | int | bytes, create: bool = False) -> None:
+def writeFile(path: str, content: Any, create: bool = False) -> None:
     '''
     Writes/saves content to a file.
 
     Args:
         path (str): the path to the file
-        content (str | int | bytes): the content you want in the file
+        content (Any): the content you want in the file
         create (bool): if the file doesn't exist, should it be created. defaults to False.
     '''
     
