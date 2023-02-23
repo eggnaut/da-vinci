@@ -21,12 +21,13 @@ Part of da vinci.
 
 Usage: 'from davinci import files' or 'import davinci.files'
 
-Includes functions for reading content from and writing content to files.
+Includes functions for reading content from files, writing content to files, and more!
 
 Made by @eggnaut
 '''
 
 import sys
+import os
 
 def totalLines(path: str) -> int:
     '''
@@ -40,8 +41,9 @@ def totalLines(path: str) -> int:
     '''
     
     total = 0
+    allFiles = [os.path.join(path, f) for f in os.listdir(path) if os.path.isfile(os.path.join(path, f))]
 
-    for file in path:
+    for file in allFiles:
         with open(file, 'r') as f:
             lines = f.readlines()
             total += len(lines)
@@ -64,7 +66,7 @@ def numLines(path: str) -> int:
 
     return len(lines)
 
-def readFile(path: str) -> Any:
+def readFile(path: str) -> any:
     '''
     Reads the contents of a file.
 
@@ -72,7 +74,7 @@ def readFile(path: str) -> Any:
         path (str): the path to the file
 
     Returns:
-        contents (Any): the contents of the file
+        contents (any): the contents of the file
     '''
     
     try:
@@ -84,13 +86,13 @@ def readFile(path: str) -> Any:
         print(f'\ndavinci.files.readFile() was unable to read the file given.\nFileNotFoundError: {path} does not exist.\nPlease make sure the path provided is correct.\n')
         sys.exit()
 
-def writeFile(path: str, content: Any, create: bool = False) -> None:
+def writeFile(path: str, content: any, create: bool = False) -> None:
     '''
     Writes/saves content to a file.
 
     Args:
         path (str): the path to the file
-        content (Any): the content you want in the file
+        content (any): the content you want in the file
         create (bool): if the file doesn't exist, should it be created. defaults to False.
     '''
     
