@@ -77,7 +77,7 @@ def loadKey(file: str) -> bytes:
 
     except FileNotFoundError:
         print(f'\ndavinci.encrypt.loadKey() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
-        sys.exit()
+        sys.exit(1)
 
 def encryptFile(key: bytes, file: str) -> None:
     '''
@@ -99,7 +99,7 @@ def encryptFile(key: bytes, file: str) -> None:
 
     except FileNotFoundError:
         print(f'\ndavinci.encrypt.encryptFile() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
-        sys.exit()
+        sys.exit(1)
 
     with open (file, 'wb') as newFile:
         newFile.write(encrypted)
@@ -126,7 +126,7 @@ def decryptFile(key: bytes, file: str) -> None:
 
     except FileNotFoundError:
         print(f'\ndavinci.encrypt.decryptFile() was unable to read the file given.\nFileNotFoundError: {file} does not exist.\nPlease make sure the path provided is correct.\n')
-        sys.exit()
+        sys.exit(1)
 
     with open(file, 'wb') as newFile:
         newFile.write(decrypted)

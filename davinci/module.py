@@ -51,7 +51,7 @@ def autoUpdate(pip: str | None, path: str) -> None:
                         sp.call(f'{pip} install {package}', shell = True)
                     except:
                         print(f'\ndavinci.module.autoUpdate() was unable to update the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
-                        sys.exit()
+                        sys.exit(1)
                 else:
                     try:
                         if pm.system() == 'Windows':
@@ -60,11 +60,12 @@ def autoUpdate(pip: str | None, path: str) -> None:
                             sp.call(f'pip3 install --upgrade {package}', shell = True)
                     except:
                         print(f'\ndavinci.module.autoUpdate() was unable to update the packages.\nError: {package} doesn\'t exist.\nPlease make sure the package name provided is correct.\n')
-                        sys.exit()
+                        sys.exit(1)
         
             file.close()
     except FileNotFoundError:
         print(f'\ndavinci.module.autoUpdate() was unable to open the file.\nError: {path} doesn\'t exist.\nPlease make sure the path provided is correct.')
+        sys.exit(1)
 
 def autoInstall(pip: str | None, path: str) -> None:
     '''
@@ -96,6 +97,7 @@ def autoInstall(pip: str | None, path: str) -> None:
             file.close()
     except FileNotFoundError:
         print(f'\ndavinci.module.autoInstall() was unable to open the file.\nError: {path} doesn\'t exist.\nPlease make sure the path provided is correct.')
+        sys.exit(1)
 
 def dependencies(pip: str | None) -> None:
     '''
@@ -112,7 +114,7 @@ def dependencies(pip: str | None) -> None:
             sp.call(f'{pip} install pillow', shell = True)
         except:
             print(f'\ndavinci.module.dependencies() was unable to install dependencies.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
-            sys.exit()
+            sys.exit(1)
     else:
         if pm.system() == 'Windows':
             sp.call('pip install pygame', shell = True)
@@ -136,7 +138,7 @@ def updateAll(pip: str | None) -> None:
             sp.call(f'{pip} list --outdated > outdated.txt', shell = True)
         except:
             print(f'\ndavinci.module.updateAll() was unable to update modules.\nError: {pip} is not a valid shell command.\nPlease make sure the pip type (pip or pip3) provided is correct.\n')
-            sys.exit()
+            sys.exit(1)
     else:
         if pm.system() == 'Windows':
             sp.call('pip list --outdated > outdated.txt', shell = True)

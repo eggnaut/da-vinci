@@ -84,7 +84,7 @@ def readFile(path: str) -> any:
 
     except FileNotFoundError:
         print(f'\ndavinci.files.readFile() was unable to read the file given.\nFileNotFoundError: {path} does not exist.\nPlease make sure the path provided is correct.\n')
-        sys.exit()
+        sys.exit(1)
 
 def writeFile(path: str, content: any, create: bool = False) -> None:
     '''
@@ -105,4 +105,4 @@ def writeFile(path: str, content: any, create: bool = False) -> None:
                 originalFile.write(content)
         else:
             print(f'\ndavinci.files.writeFile() was unable to read the file given.\nFileNotFoundError: {path} does not exist.\nPlease make sure the path provided is correct.\n')
-            sys.exit()
+            sys.exit(1)

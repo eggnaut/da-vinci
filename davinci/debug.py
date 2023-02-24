@@ -53,7 +53,7 @@ def debug(info, wn: pg.Surface, pos: tuple | None = (0, 0), font: pg.font.Font |
         debugInfo = mainFont.render(info, True, '#FFFFFF', '#000000')
     except:
         print(f'\davinci.debug.debug() was unable to debug the info given.\nError: {info} does not exist.\nPlease make sure the info provided is correct.\n')
-        sys.exit()
+        sys.exit(1)
 
     wn.blit(debugInfo, pos)
 
