@@ -39,7 +39,7 @@ def debug(info, wn: pg.Surface, pos: tuple | None = (0, 0), font: pg.font.Font |
         info (any): a variable, will be the info displayed for debugging ease
         wn (pg.Surface): the Pygame window that info will be displayed on
         pos (tuple | None, optional): position in coordinates on window. defaults to (0, 0).
-        font (pg.font.Font | None, optional): if you want to use a custom font. defaults to None.
+        font (pg.font.Font | None, optional): if you want to use a custom font. defaults to Arial font.
         italic (bool | None, optional): if using custom font, then italic. defaults to False.
         bold (bool | None, optional): if using custom font, then bold. defaults to False.
     '''
@@ -52,7 +52,7 @@ def debug(info, wn: pg.Surface, pos: tuple | None = (0, 0), font: pg.font.Font |
     try:
         debugInfo = mainFont.render(info, True, '#FFFFFF', '#000000')
     except:
-        print(f'\davinci.debug.debug() was unable to debug the info given.\nError: {info} does not exist.\nPlease make sure the info provided is correct.\n')
+        print(f'davinci.debug.debug() was unable to debug the info given.\nError: {info} does not exist.\nPlease make sure the info provided is correct.\n')
         sys.exit(1)
 
     wn.blit(debugInfo, pos)

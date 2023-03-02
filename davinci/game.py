@@ -32,6 +32,18 @@ import math as mt
 import pygame as pg
 pg.init()
 
+def sinHover(sprite: pg.sprite.Sprite, intensity: float | int | None = 6) -> None:
+    ticks = pg.time.get_ticks() / 1000
+    y = mt.sin(ticks * intensity) * intensity + 100
+
+    sprite.rect.centery = y
+
+def cosHover(sprite: pg.sprite.Sprite, intensity: float | int | None = 6) -> None:
+    ticks = pg.time.get_ticks() / 1000
+    y = mt.cos(ticks * intensity) * intensity + 100
+
+    sprite.rect.centery = y
+
 def close() -> None:
     '''
     Properly exits a Pygame application.

@@ -25,7 +25,7 @@ An all-purpose framework/library written with and for Python.
 ## Features:
 da vinci comes with 8 Python modules ready to use!
 1. `data`
-2. `debug`
+2. `debug` (*experimental*)
 3. `encrypt`
 4. `files`
 5. `game` (*experimental*)
