@@ -31,7 +31,7 @@ import platform as pm
 import pygame as pg
 pg.init()
 
-def debug(info, wn: pg.Surface, pos: tuple | None = (0, 0), font: pg.font.Font | None = None, italic: bool | None = False, bold: bool | None = False) -> None:
+def debug(info, wn: pg.Surface, pos: tuple | None = (0, 0), font: pg.font.Font | None = None, fontSize: int | None = 30, italic: bool | None = False, bold: bool | None = False) -> None:
     '''
     Given a variable, this function will display it's value on a Pygame window.
 
@@ -47,7 +47,7 @@ def debug(info, wn: pg.Surface, pos: tuple | None = (0, 0), font: pg.font.Font |
     if font:
         mainFont = font
     else:
-        mainFont = pg.font.SysFont('Arial', 30, bold, italic)
+        mainFont = pg.font.SysFont('Arial', fontSize, bold, italic)
 
     try:
         info = str(info)
