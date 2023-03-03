@@ -31,29 +31,31 @@ import math as mt
 import pygame as pg
 pg.init()
 
-def sinHover(sprite: pg.sprite.Sprite, intensity: float | int | None = 6) -> None:
+def sinHover(sprite: pg.sprite.Sprite, intensity: float | int | None = 10, speed: float | int | None = 5) -> None:
     '''
     A function that makes a sprite look like its hovering. Utlizes a sine wave/function.
 
     Args:
         sprite (pg.sprite.Sprite): the sprite you want to hover.
-        intensity (float | int | None, optional): How intense the movement should be (a multiplier). defaults to 6.
+        intensity (float | int | None, optional): how far the vertical movement goes (in pixels). defaults to 10.
+        speed (float | int | None, optional): how fast the movement should be (a multiplier). defaults to 5.
     '''
     ticks = pg.time.get_ticks() / 1000
-    y = mt.sin(ticks * intensity) * intensity + 100
+    y = mt.sin(ticks * speed) * intensity + sprite.rect.centerx
 
     sprite.rect.centery = y
 
-def cosHover(sprite: pg.sprite.Sprite, intensity: float | int | None = 6) -> None:
+def cosHover(sprite: pg.sprite.Sprite, intensity: float | int | None = 10, speed: float | int | None = 5) -> None:
     '''
     A function that makes a sprite look like its hovering. Utlizes a cosine wave/function.
 
     Args:
         sprite (pg.sprite.Sprite): the sprite you want to hover.
-        intensity (float | int | None, optional): How intense the movement should be (a multiplier). defaults to 6.
+        intensity (float | int | None, optional): how far the vertical movement goes (in pixels). defaults to 10.
+        speed (float | int | None, optional): how fast the movement should be (a multiplier). defaults to 5.
     '''
     ticks = pg.time.get_ticks() / 1000
-    y = mt.cos(ticks * intensity) * intensity + 100
+    y = mt.cos(ticks * speed) * intensity + sprite.rect.centerx
 
     sprite.rect.centery = y
 
