@@ -32,12 +32,26 @@ import pygame as pg
 pg.init()
 
 def sinHover(sprite: pg.sprite.Sprite, intensity: float | int | None = 6) -> None:
+    '''
+    A function that makes a sprite look like its hovering. Utlizes a sine wave/function.
+
+    Args:
+        sprite (pg.sprite.Sprite): the sprite you want to hover.
+        intensity (float | int | None, optional): How intense the movement should be (a multiplier). defaults to 6.
+    '''
     ticks = pg.time.get_ticks() / 1000
     y = mt.sin(ticks * intensity) * intensity + 100
 
     sprite.rect.centery = y
 
 def cosHover(sprite: pg.sprite.Sprite, intensity: float | int | None = 6) -> None:
+    '''
+    A function that makes a sprite look like its hovering. Utlizes a cosine wave/function.
+
+    Args:
+        sprite (pg.sprite.Sprite): the sprite you want to hover.
+        intensity (float | int | None, optional): How intense the movement should be (a multiplier). defaults to 6.
+    '''
     ticks = pg.time.get_ticks() / 1000
     y = mt.cos(ticks * intensity) * intensity + 100
 
@@ -45,7 +59,7 @@ def cosHover(sprite: pg.sprite.Sprite, intensity: float | int | None = 6) -> Non
 
 def loadFolder(path: str) -> list:
     '''
-    Loads all the images (using Pygame) within a directory. These images are ret
+    Loads all the images (using Pygame) within a directory. These images are returned as a list.
 
     Args:
         path (str): the path to the directory/folder
@@ -101,8 +115,7 @@ def center() -> tuple:
         centerPos (tuple): the center of the screen as coordinates
     '''
     
-    width = pg.display.get_window_size()[0]
-    length = pg.display.get_window_size()[1]
+    width, length = pg.display.get_window_size()
     centerPos = (width / 2, length / 2)
     
     return centerPos
