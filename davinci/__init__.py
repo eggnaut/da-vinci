@@ -25,3 +25,12 @@ GNU Lesser General Public License (v2.1).
 
 Made by @eggnaut
 '''
+
+import data
+import debug
+import encrypt
+import files
+import game
+import image
+import module
+import turtl
