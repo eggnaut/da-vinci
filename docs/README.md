@@ -93,4 +93,6 @@ davinci.data.generateList(...)
 3. Now you're ready to start using da vinci in your project!
 
 ## License:
-This project is licensed under the `GNU Lesser General Public License v2.1` license. License information can be found in `docs/LICENSE.md`.
+This project is licensed under the `GNU Lesser General Public License v2.1` license. 
+
+License information can be found in `docs/LICENSE.md`.
