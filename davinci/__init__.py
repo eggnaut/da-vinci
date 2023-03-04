@@ -26,11 +26,11 @@ GNU Lesser General Public License (v2.1).
 Made by @eggnaut
 '''
 
-import data
-import debug
-import encrypt
-import files
-import game
-import image
-import module
-import turtl
+from . import data
+from . import debug
+from . import encrypt
+from . import files
+from . import game
+from . import image
+from . import module
+from . import turtl
