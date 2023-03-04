@@ -32,7 +32,7 @@ import platform as pm
 
 def autoUpdate(pip: str | None, path: str) -> None:
     '''
-    Automatically updates all Python packages from a file.
+    Automatically updates all Python packages listed in a file.
 
     Args:
         pip (str | None): for macOS: pip3, for Windows: pip, this is a terminal/shell command
@@ -69,7 +69,7 @@ def autoUpdate(pip: str | None, path: str) -> None:
 
 def autoInstall(pip: str | None, path: str) -> None:
     '''
-    Automatically installs all Python packages from a file.
+    Automatically installs all Python packages listed in a file.
 
     Args:
         pip (str | None): for macOS: pip3, for Windows: pip, this is a terminal/shell command
