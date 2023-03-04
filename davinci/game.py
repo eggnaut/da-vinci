@@ -80,17 +80,6 @@ def loadFolder(path: str) -> list:
 
     return imgs
 
-def hideWelcome() -> None:
-    '''
-    Hides the Pygame welcome statement. This statement usually shows Pygame and SDL versions.
-    Can be quite annoying in commercial/distributed games.
-
-    Must be called (the function) before importing Pygame.
-    '''
-
-    import os
-    os.environ['PYGAME_HIDE_SUPPORT_PROMPT'] = 'hide'
-
 def pointMouse(sprite: pg.sprite.Sprite) -> None:
     '''
     Rotates a sprite's image to point towards the mouse-pointer.
@@ -131,7 +120,7 @@ def isColliding(sprite: pg.sprite.Sprite, obstacles: pg.sprite.Group | pg.sprite
         obstacles (pg.sprite.Group | pg.sprite.GroupSingle): check if these sprites are colliding with the original sprite
 
     Returns:
-        bool: whether or not any collisions happened with any of the obstacle sprites
+        collision (bool): whether or not any collisions happened with any of the obstacle sprites
     '''
     
     collisions = 0
@@ -154,7 +143,7 @@ def collideTop(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
         obstacle (pg.sprite.Sprite): the sprite that will collide with the original sprite
 
     Returns:
-        bool: if the top of the original sprite collided with the obstacle sprite or not
+        collision (bool): if the top of the original sprite collided with the obstacle sprite or not
     '''
     
     sCoords = {
@@ -189,7 +178,7 @@ def collideBottom(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
         obstacle (pg.sprite.Sprite): the sprite that will collide with the original sprite
 
     Returns:
-        bool: if the bottom of the original sprite collided with the obstacle sprite or not
+        collision (bool): if the bottom of the original sprite collided with the obstacle sprite or not
     '''
     
     sCoords = {
@@ -224,7 +213,7 @@ def collideLeft(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
         obstacle (pg.sprite.Sprite): the sprite that will collide with the original sprite
 
     Returns:
-        bool: if the left of the original sprite collided with the obstacle sprite or not
+        collision (bool): if the left of the original sprite collided with the obstacle sprite or not
     '''
     
     sCoords = {
@@ -259,7 +248,7 @@ def collideRight(sprite: pg.sprite.Sprite, obstacle: pg.sprite.Sprite) -> bool:
         obstacle (pg.sprite.Sprite): the sprite that will collide with the original sprite
 
     Returns:
-        bool: if the right of the original sprite collided with the obstacle sprite or not
+        collision (bool): if the right of the original sprite collided with the obstacle sprite or not
     '''
     
     sCoords = {
