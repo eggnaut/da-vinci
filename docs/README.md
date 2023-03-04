@@ -63,7 +63,6 @@ davinci.module.dependencies()
 7. You can now delete this file.
 
 ## Integration:
-
 Obviously, the first step would be to download the repository or from the latest release. Then, follow these steps:
 
 1. Copy the folder `davinci` into your project folder.
@@ -92,3 +91,6 @@ import davinci.data
 davinci.data.generateList(...)
 ```
 3. Now you're ready to start using da vinci in your project!
+
+## License:
+This project is licensed under the `GNU Lesser General Public License v2.1` license. License information can be found in `docs/LICENSE.md`.
