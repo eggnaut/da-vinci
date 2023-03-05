@@ -4,8 +4,8 @@
 An all-purpose framework/library written with and for Python.
 </div>
 
-## Notice:
-da vinci will stop recieving major updates as of March 3, 2023. Minor changes and fixes _may_ be made, but no guarentees. New features will not be added and da vinci will not be tested further. Use at your own risk. The project may not function properly with newer versions of Python.
+## Archive Notice:
+`da vinci` will stop recieving major updates as of March 3, 2023. Minor changes and fixes _may_ be made, but no guarentees. New features will not be added and da vinci will not be tested further. Use at your own risk. The project may not function properly with newer versions of Python.
 
 ## Socials:
 
