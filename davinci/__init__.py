@@ -34,3 +34,5 @@ from . import game
 from . import image
 from . import module
 from . import turtl
+from . import coords
+from . import fps
