@@ -4,6 +4,9 @@
 An all-purpose framework/library written with and for Python.
 </div>
 
+## Notice:
+da vinci will stop recieving major updates as of March 3, 2023. Minor changes and fixes _may_ be made, but no guarentees. New features will not be added and da vinci will not be tested further. Use at your own risk. The project is not guarenteed to function properly with newer versions of Python.
+
 ## Socials:
 
 ![GitHub Repo stars](https://img.shields.io/github/stars/eggnaut/da-vinci?color=yellow&logo=Github&style=for-the-badge) ![GitHub watchers](https://img.shields.io/github/watchers/eggnaut/EggEngine?color=orange&logo=Github&style=for-the-badge)
