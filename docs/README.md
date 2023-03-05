@@ -26,7 +26,7 @@ da vinci will stop recieving major updates as of March 3, 2023. Minor changes an
 ![GitHub last commit](https://img.shields.io/github/last-commit/eggnaut/da-vinci?style=for-the-badge) ![GitHub contributors](https://img.shields.io/github/contributors/eggnaut/da-vinci?style=for-the-badge)
 
 ## Features:
-da vinci comes with 8 Python modules ready to use!
+da vinci comes with 10 Python modules ready to use!
 1. `data`
 2. `debug`
 3. `encrypt`
@@ -35,6 +35,8 @@ da vinci comes with 8 Python modules ready to use!
 6. `image`
 7. `module` (*experimental*)
 8. `turtl`
+9. `fps`
+10. `coords`
 
 **Note:** Modules marked with 'experimental' may not function properly and may contain bugs.
 
